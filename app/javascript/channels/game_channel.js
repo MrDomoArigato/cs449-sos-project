@@ -1,8 +1,9 @@
 import consumer from "channels/consumer"
+import game from "pages/gameplay"
 
-consumer.subscriptions.create({channel: "GameChannel", game_id: 1}, {
+const gameChannel = consumer.subscriptions.create({channel: "GameChannel", game_id: game_id}, {
   connected() {
-    console.log("CONnect to Game Channel")
+    console.log("Connect to ", this)
   },
 
   disconnected() {
@@ -11,6 +12,9 @@ consumer.subscriptions.create({channel: "GameChannel", game_id: 1}, {
 
   received(data) {
     // Called when there's incoming data on the websocket for this channel
+    game.ProcessAction(data);
     console.log(data)
   }
 });
+
+export default gameChannel;

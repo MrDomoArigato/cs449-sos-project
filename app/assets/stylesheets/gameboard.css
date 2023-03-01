@@ -1,0 +1,129 @@
+/* 
+ Board Game Settings
+*/
+
+#game-container{
+    border-style: solid; /* Remove maybe? */
+    border-color: black;
+
+    position: relative;
+    top: 15vh;
+    
+    width: 100vw;
+    height: 85vh;
+    overflow: scroll;
+}
+
+#gameboard{
+    position: absolute;
+}
+
+.player1:hover{
+    border-color: red;
+}
+
+.player2:hover{
+    border-color: blue;
+}
+
+.gametile{
+    border-style: solid;
+    border-color: black;
+
+    width: 5vh;
+    height: 5vh;
+
+    position: absolute;
+    z-index: 1;
+}
+
+/* 
+ Overlay Settings
+*/
+
+#overlay-bkgrd{
+    /* Remove */
+    border-style: solid;
+    border-color: black;
+
+    top: 0px;
+    left: 0px;
+
+    max-width: 20vh;
+    height: auto;
+}
+
+.undr.container{
+    border-style: solid;
+    border-color: blue;
+
+    height: max-content;
+    width: max-content;
+
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.overlay.container{
+    /* Remove */
+    border-style: solid;
+    border-color: blueviolet;
+
+    width: max-content;
+    height: max-content;
+    
+    top: 200px;
+    left: 500px;
+    position: absolute;
+    z-index: 5;
+}
+
+.options.container{
+    /* Remove */
+    border-style: solid;
+    border-color: chartreuse;
+
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    top: .8vh;
+    left: 1.4vw;
+
+    width: 73%;
+    height: 57%;
+    z-index: 9;
+}
+
+.select.option{
+    border-style: solid;
+    border-color: magenta;
+    opacity: 0.5;
+
+    margin: 0px;
+}
+
+.select.option:hover{
+    opacity: 1;
+}
+
+h1.select.option{
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.7vh;
+    text-align: center;
+    line-height: 100%;
+
+    padding: 1% 6% 1% 5.5%;
+
+    width: max-content;
+    height: auto;
+}
+
+img.select.option{
+    height: 100%;
+    width: auto;
+    
+    /* visibility: hidden; */
+
+    padding: 0px;
+}

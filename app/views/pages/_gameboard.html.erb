@@ -1,0 +1,18 @@
+<%= javascript_import_module_tag "pages/gameboard" %>
+
+
+<div id="game-container">
+    <div id="gameboard"></div>
+
+    <div class="select container overlay">
+        <div class="undr container">
+            <%= image_tag("overlay.png", id: "overlay-bkgrd", class: "select overlay") %>
+            <div class="select options container">
+                <h1 id="btn-s" class="select option btn text">S</h1>
+                <%= image_tag("disable-btn.png", id: "btn-disable", class: "select option btn", alt: "D") %>
+                <h1 id="btn-o" class="select option btn text">O</h1>
+            </div>
+        </div>
+    </div>
+</div>
+

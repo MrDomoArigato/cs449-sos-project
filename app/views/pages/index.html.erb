@@ -1,0 +1,13 @@
+<% if @status == 1 %>
+    <div>
+        <%= render "login", username: @username %>
+    </div>
+<% elsif @status == 2 %>
+    <div width="100vw" height="100vh">
+        <%= render "new-game" %>
+    </div>
+<% elsif @status == 4 %>
+    <div width="100vw" height="100vh">
+        <%= render "coin" %>
+    </div>
+<% end %>

@@ -1,0 +1,35 @@
+<div>
+    <div class="container align-middle">
+        <div class="vh-100 d-flex align-items-center justify-content-center">
+        <div class="row justify-content-center no-gutters">
+        <div class="col-md-auto">
+            <button class="btn btn-xl btn-primary" disabled>PvP</button>
+            <button class="btn btn-xl btn-primary active">Computer</button>
+            <button class="btn btn-xl btn-primary" disabled>Online</button>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-auto">
+            <select id="gameSelect" class="form-select btn-xl my-4 p-2" style="width:300px;">
+                <option selected>Difficulty</option>
+                <option value="easy">Easy</option>
+                <option value="norm">Normal</option>
+            </select>
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-auto" style="display:none;">
+            <label for="boardsize" class="form-label">Board Size:</label>
+            <input type="text" id="boardsize" class="my-4" style="width:50px;" disabled readonly>
+            <input type="range" class="form-range my-5 mx-2" value="5" min="5" max="50" step="5" style="width:475px;height:-1px;" id="customRange1">
+        </div>
+        <div class="col-md-auto">
+            <label for="boardsize" class="form-label btn-xl">Board Size:</label>
+            <input type="text" id="boardsize" class="mt-4 mb-5" style="width:50px;">
+        </div>
+        <div class="w-100"></div>
+        <div class="col-md-auto">
+            <button class="btn btn-xl btn-primary">New Game</button>
+        </div>
+        </div>
+        </div>
+    </div>
+</div>
